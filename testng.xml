@@ -1,0 +1,59 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ebay Automation Suite" verbose="1">
+    <test name="Chrome Test">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="url" value="https://www.ebay.com/" />
+        <parameter name="product" value="Mobile Phone" />
+        <parameter name="category" value="Cell Phones &amp; Accessories" />
+        <parameter name="no_of_checking_results" value="5" />
+        <parameter name="color" value="Blue" />
+        <parameter name="quantity" value="1" />
+
+        <classes>
+            <class name="EbayPurchaseTest"/>
+            <class name="Navigation"/>
+            <class name="HomePage"/>
+            <class name="ProductPage"/>
+            <class name="ShoppingCart"/>
+            <class name="CheckoutPage"/>
+        </classes>
+    </test>
+    <test name="Edge Test">
+        <parameter name="browser" value="Edge" />
+        <parameter name="url" value="https://www.ebay.com/" />
+        <parameter name="product" value="Mobile Phone" />
+        <parameter name="category" value="Cell Phones &amp; Accessories" />
+        <parameter name="no_of_checking_results" value="5" />
+        <parameter name="color" value="Blue" />
+        <parameter name="quantity" value="1" />
+
+        <classes>
+            <class name="EbayPurchaseTest"/>
+            <class name="Navigation"/>
+            <class name="HomePage"/>
+            <class name="ProductPage"/>
+            <class name="ShoppingCart"/>
+            <class name="CheckoutPage"/>
+        </classes>
+    </test>
+    <test name="Firefox Test">
+        <parameter name="browser" value="Firefox" />
+        <parameter name="url" value="https://www.ebay.com/" />
+        <parameter name="product" value="Mobile Phone" />
+        <parameter name="category" value="Cell Phones &amp; Accessories" />
+        <parameter name="no_of_checking_results" value="5" />
+        <parameter name="color" value="Blue" />
+        <parameter name="quantity" value="1" />
+
+        <classes>
+            <class name="EbayPurchaseTest"/>
+            <class name="Navigation"/>
+            <class name="HomePage"/>
+            <class name="ProductPage"/>
+            <class name="ShoppingCart"/>
+            <class name="CheckoutPage"/>
+        </classes>
+    </test>
+
+
+</suite>
